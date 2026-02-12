@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0f0f1a;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #1e3a8a, #312e81);
+    text-align: center;
+    padding: 100px 20px 80px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin: 10px 0;
+}
+
+.hero h2 {
+    font-size: 1.8rem;
+    color: #60a5fa;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 15px 0 25px;
+    opacity: 0.9;
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 5px solid #60a5fa;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 2rem;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #60a5fa;
+    transform: translateY(-5px);
+}
+
+section {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    color: #60a5fa;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.skill {
+    background: #1e1e2e;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 500;
+    border: 1px solid #333;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: #1e1e2e;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #60a5fa;
+}
+
+.btn {
+    display: inline-block;
+    background: #3b82f6;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: #2563eb;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+#contact a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+footer {
+    background: #0a0a15;
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9rem;
+    border-top: 1px solid #222;
+}
+
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.8rem; }
+    .hero h2 { font-size: 1.5rem; }
+    section { padding: 60px 15px; }
+}
